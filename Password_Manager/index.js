@@ -25,6 +25,7 @@ var deletebtn = document.createElement("button");
 deletebtn.textContent = "Delete";
 
 deletebtn.style.backgroundColor = "red";
+
 deletebtn.style.color = "white";
 deletebtn.style.border = "none";
 deletebtn.style.padding = "10px";
@@ -45,6 +46,7 @@ var headerRow = newTable.insertRow(0);
 var headerCell1 = headerRow.insertCell(0);
 var headerCell2 = headerRow.insertCell(1);
 var headerCell3 = headerRow.insertCell(2);
+  
 
 headerCell1.textContent = "Website";
 headerCell2.textContent = "Username";
