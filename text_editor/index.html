@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Text_editor</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 50px; text-decoration: underline;">Text Editor</h1>
+    <nav>
+        <ul>
+            <li>
+                <select id="mySelect" onchange="shiftText()">
+                    <option value="Do_Nothing">Back To Normal</option>
+                    <option value="option1">bold</option>
+                    <option value="option2">italic</option>
+                    <option value="option3">underline</option>
+                    <option value="option4">align-center</option>
+                  
+        
+                  </select>
+        
+            </li>
+            <li>
+                <select id="font-drop_down" onchange="font_change()">
+                    <option value="Do_Nothing">Back To Normal</option>
+                    <option value="one">10px</option>
+                    <option value="two">20px</option>
+                    <option value="three">25px</option>
+                    <option value="five">30px</option>
+                    <option value="six">35px</option>
+                    <option value="seven">40px</option>
+                    <option value="eight">45px</option>
+                    <option value="nine">50px</option>
+                    <option value="ten">55px</option>
+                </select>
+        
+
+            </li>
+            <li>
+                <select id="color-drop_down" onchange="change_Color()">
+                    <option value="custom">Enter Custom Color</option>
+                    <option value="c1">Black</option>
+                    <option value="c2">Green</option>
+                    <option value="c3">Red</option>
+                    <option value="c4">Yellow</option>
+                    <option value="c5">Blue</option>
+                    <option value="c6">Purple</option>
+                    <option value="c7">Orange</option>
+                    <option value="c8">Brown</option>
+                    <option value="c9">Gray</option>
+                    <option value="c10">Pink</option>
+                    <option value="c11">Turquoise</option>
+                    <option value="c12">Peach</option>
+                    <option value="c13">Mint</option>
+             
+                </select>
+        
+            </li>
+
+            <li>
+                <select id="back-drop_down" onchange="change_Color_back()">
+                    <option value="custom">Enter Custom Color</option>
+                    <option value="Bc1">white</option>
+                    <option value="Bc2">Green</option>
+                    <option value="Bc3">Red</option>
+                    <option value="Bc4">Yellow</option>
+                    <option value="Bc5">Blue</option>
+                    <option value="Bc6">Purple</option>
+                    <option value="Bc7">Orange</option>
+                    <option value="Bc8">Brown</option>
+                    <option value="Bc9">Gray</option>
+                    <option value="Bc10">Pink</option>
+                    <option value="Bc11">Turquoise</option>
+                    <option value="Bc12">Peach</option>
+                    <option value="Bc13">Mint</option>
+             
+                </select>
+
+            </li>
+        </ul>
+    </nav>
+     <div class="main">
+     
+          
+          <!-- <input type="text" id="myInput"> -->
+          <textarea id="myInput" placeholder="Start writing from here"></textarea>
+     </div>
+
+     <p style="text-align: end; margin-right: 20px;">Copy@AdeshKulkarni</p>
+ 
+    <script src="index.js"></script>
+</body>
+</html>
